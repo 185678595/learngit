@@ -1,0 +1,10 @@
+/* pages/demo/demo.wxss */
+swiper-item image{width: 750rpx;height: 359rpx}
+
+.list{padding: 25rpx 0rpx;border-bottom: 1px solid #ccc;display: flex;margin: 0 20rpx;}
+.list image{width: 160rpx;height: 160rpx;}
+.list .txt{width: 560rpx;padding-left: 20rpx;}
+.tit{font-size: 16px;font-weight: bold;padding-bottom: 15rpx;}
+.tit text{color: #25435b}
+.des{font-size: 12px;line-height: 20px;}
+.des text{color: #999;}

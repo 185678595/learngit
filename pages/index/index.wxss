@@ -1,0 +1,5 @@
+/* pages/index/index.wxss */
+view{display: flex;align-items: center;flex-direction: column;}
+.classname image{border-radius: 50%;width: 200rpx;height: 200rpx;margin-top:200rpx;}
+.welcometxt{margin-top: 50rpx;}
+.btn{padding: 5px 10px;border-radius: 5px;border: 1px solid #ccc;}

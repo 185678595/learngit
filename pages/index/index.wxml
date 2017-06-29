@@ -1,0 +1,8 @@
+<!--pages/index/index.wxml-->
+<view class="classname">
+    <image src="/images/boy.jpg"></image>
+    <text class="welcometxt">hello world</text>
+    <view class="btn" catchtap="godemo">
+     <text>欢迎光临</text>
+    </view>
+</view>

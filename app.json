@@ -1,0 +1,8 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/demo/demo",
+    "pages/demo/template/template",
+    "pages/demo/demo-child/child"
+  ]
+}

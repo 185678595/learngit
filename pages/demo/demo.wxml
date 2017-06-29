@@ -1,0 +1,17 @@
+<swiper autoplay duration="2000" circular="true">
+ <swiper-item>
+  <image src="../../images/simg.jpg"></image>
+ </swiper-item>
+  <swiper-item>
+  <image src="../../images/simg.jpg"></image>
+ </swiper-item>
+  <swiper-item>
+  <image src="../../images/simg.jpg"></image>
+ </swiper-item>
+</swiper>
+
+<import src="template/template.wxml" />
+
+<block wx:for="{{list}}">
+  <template is="list" data="{{item}}"></template>
+</block>
