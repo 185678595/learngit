@@ -1,0 +1,33 @@
+/* card.wxss */
+.container{padding: 45rpx 45rpx;}
+.picview{width:100%;height: 380rpx;display: block;border-radius: 10rpx;}
+
+.card{margin-top: 100rpx;border-bottom:1px solid #eee;padding-bottom: 20rpx;}
+.title{margin-bottom: 20rpx;}
+.title text{line-height: 40rpx;vertical-align: middle;font-size: 18px;}
+.title image{width: 50rpx;height: 40rpx;vertical-align: middle;margin-right: 10rpx;}
+.cardlist{display: flex;justify-content: space-between;flex-wrap: wrap}
+.carditem{position: relative}
+.carditem image{width: 190rpx;height: 113rpx;border-radius: 10rpx;box-sizing: border-box;border: 6rpx solid transparent}
+.whitemodal{position: absolute;width: 100%;height: 100%;background: rgba(255, 255, 255, .4);top: 0;left: 0}
+.active image{border-color: green;}
+
+.gift{margin-top: 20rpx;}
+.giftlist{display: flex;justify-content: space-between;flex-wrap:wrap}
+.giftitem{border: 1px solid #888;border-radius: 10rpx;width: 190rpx;height: 113rpx;margin: 20rpx 0;text-align: center;color: #ccc}
+.price{display: inline-block;font-size: 18px;text-align: center;height: 60rpx;line-height: 60rpx;text-overflow:ellipsis;width: 146rpx;overflow: hidden;white-space: nowrap}
+.giftname{font-size: 14px;text-align: center;display: block;font-weight: bold}
+.giftlist .active{border-color:#1aad19}
+.active .price{color:#1aad19}
+.active .giftname{color: #1aad19;}
+
+.line{height: 45rpx;background: #f1f1f1;}
+
+.Wrap{padding-bottom: 50rpx;margin-bottom: 100rpx;height: 352rpx;border-bottom: 1px solid #f1f1f1;}
+.state{line-height: 40rpx;height: 40rpx;font-size: 12px;margin: 20rpx 0;}
+.state .left{display:block;width: 20%;text-align: center;float: left;}
+.state .right{box-sizing: border-box;width: 80%;padding: 0 10rpx;display: block;float: right;color: #888;}
+.state .where{color: blue;}
+
+.buy{height: 100rpx;position: fixed;bottom: 0;padding:10rpx 15rpx;width: 100%;box-sizing: border-box;background: #fff;}
+.buy button{border-radius: 6rpx;background: #1aad19;color: #fff;}

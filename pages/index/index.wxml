@@ -1,8 +1,38 @@
-<!--pages/index/index.wxml-->
-<view class="classname">
-    <image src="/images/boy.jpg"></image>
-    <text class="welcometxt">hello world</text>
-    <view class="btn" catchtap="godemo">
-     <text>欢迎光临</text>
+<!--index.wxml-->
+<view class="mainpic">
+  <image src="/images/mainpic.jpg"></image>
+</view>
+
+<view class="cardlist">
+ <view class="wantcoffee">
+  <text class="title">请TA喝咖啡</text>
+  <view class="menu">
+    <view class="item" wx:for="{{coffeelist}}" catchtap="buyIt" data-id="{{item.id}}" data-class="coffee">
+      <image src="/images/{{item.img}}"></image>
+      <text class="des">{{item.txt}}</text>
     </view>
+  </view>
+ </view>
+</view>
+
+<view class="cardlist">
+ <view class="wantcoffee">
+  <text class="title">礼品卡表心意</text>
+  <view class="menu">
+    <view class="item" wx:for="{{card}}" catchtap="buyIt" data-id="{{item.id}}" data-class="card">
+      <image src="/images/{{item.img}}"></image>
+      <text class="des">{{item.txt}}</text>
+    </view>
+  </view>
+  <view class="history">
+    <image src="/images/history_03.jpg"></image>
+    <text>购买历史</text>
+  </view>
+
+ </view>
+ 
+</view>
+
+<view class="footer">
+  <text>可以在小程序入口选购礼品卡</text>
 </view>

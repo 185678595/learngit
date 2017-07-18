@@ -1,7 +1,0 @@
-/* child.wxss */
-page{background: pink}
-.container{}
-.mainpic{width: 750rpx;height: 365rpx;}
-.title{font-size: 20px;line-height: 50rpx;border-bottom: 1px salmon solid;text-align: center;margin: 0 20rpx;position: relative}
-.title image{width: 40rpx;height: 40rpx;float: right}
-.cont{padding: 20rpx;font-size:16px;}

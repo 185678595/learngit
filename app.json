@@ -1,8 +1,13 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/demo/demo",
-    "pages/demo/template/template",
-    "pages/demo/demo-child/child"
-  ]
+    "pages/card/card",
+    "pages/map/map"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "星巴克用星说",
+    "navigationBarTextStyle": "black"
+  }
 }

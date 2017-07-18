@@ -1,36 +1,39 @@
-// pages/index/index.js
+// index.js
+var obj=require('../../data/data.js')
+
 Page({
-  godemo:function(){
+  buyIt:function(e){
     wx.navigateTo({
-      url: '../demo/demo',
+      url: '/pages/card/card?id=' + e.currentTarget.dataset.id+"&class="+e.currentTarget.dataset.class,
     })
   },
   /**
    * 页面的初始数据
    */
   data: {
-
+    coffeelist:obj.coffee,
+    card:obj.card
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+  
   },
 
   /**

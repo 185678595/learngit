@@ -1,69 +1,38 @@
-// child.js
-var data=require('../../../data/data.js')
+// pages/index/map/map.js
 Page({
+
   /**
    * 页面的初始数据
    */
   data: {
-  
+    markers: [{
+      id: 0,
+      latitude: 30.4841200000,
+      longitude: 114.4108600000
+    }]
   },
-  col:function(){
-    let qq=wx.getStorageSync('obj')
-    console.log(qq);
-    let postid=this.data.postid
-    qq[postid]=!qq[postid]
-
-    wx.setStorageSync("obj",qq)
-    this.setData({
-      collected:qq[postid]
-    })
-    wx.showToast({
-      title: qq[postid]?'收藏成功':'取消收藏',
-      icon: 'success',
-      duration: 1500,
-      mask:true
-    })
+  mapclick:function(e){
+    console.log(e)
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.showLoading({
-      title: '加载中',
-    })
-    
-    var id=options.id;
-    this.setData({
-      info: data.list[id],
-      postid:id
-    });
-
-    var qq=wx.getStorageSync('obj')
-
-    if(qq){
-      this.setData({
-        collected:qq[id]
-      })
-    }else{
-      qq={};
-      qq[id]=false;
-      wx.setStorageSync("obj", qq)
-    };
-
+  
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+  
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    wx.hideLoading()
+  
   },
 
   /**
